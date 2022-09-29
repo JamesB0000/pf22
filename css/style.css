@@ -1,0 +1,336 @@
+.inner{max-width: 1600px; margin:0 auto}
+.flex{display: flex;flex-direction: row;flex-wrap: wrap;}
+
+#wrap{position: relative;}
+
+/*********************header****************************/
+#header .logo{
+    padding-left: 10px;
+    padding-top: 40px;
+    position: absolute;
+}
+#nav .flex{
+    justify-content:space-evenly;
+    padding-top: 60px;
+}
+#nav ul{
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+/*********************about****************************/
+#abo{
+    color:black;
+    height: 480px;
+}
+#abo .p_logo{
+    padding-top: 100px;
+    width: 25%;
+    animation: 3s move3 forwards infinite;
+}
+/*********************publish****************************/
+#pub{
+    padding: 150px 0;
+    color: #000;
+    font-weight: 500;
+}
+#pub .p_logo{
+    width: 40%;
+    margin-bottom: 30px;
+    animation: 3s move3 forwards infinite;
+}
+#pub ul{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+#pub li{
+    border: 1px solid #ddd;
+    width: calc((100% - 10%)/3);
+    text-align: center;
+    padding: 50px;
+    box-sizing: border-box;
+    border-radius: 20px;
+    transition-duration: 0.3s;
+    background-color: yellow;
+}
+#pub li:hover{
+    border: 1px solid #000;
+}
+#pub li img{
+    margin-bottom: 30px;
+}
+#pub .sl02{
+    width: 100%;
+}
+#pub li h2{
+    font-size: 2rem;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+#pub li p::after{
+    content: ">";
+    margin-left: 10px;
+}
+#pub li a{
+    display: block;
+}
+
+/*********************design****************************/
+#des .p_logo{
+    width: 25%;
+    /* margin-bottom: 10px; */
+    animation: 3s move3 forwards infinite;
+}
+#design{
+    /* background-color: #e6007e; */
+    color:black;
+    height: 480px;
+}
+#night{
+    background-color:yellow;
+    color:black;
+    height: 480px;
+}
+#mody{
+    color:black;
+    height: 480px;
+    background-color: #8597d5;
+}
+.device{
+    /* height: 100vh; */
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.device .inner{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.device .inner .left_txt_tit{
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+.device .inner .left_txt_cont{
+    font-size: 1.4rem;
+    font-weight: normal;
+    color: #8597d5;
+}
+.device .left_txt{
+    width: 30%;
+}
+.device .right_list{
+    width: 60%;
+}
+.device .right_list ul{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+.device .right_list ul li{
+    width: calc((100% - 50px)/3);
+    border-radius: 20px;
+    overflow: hidden;
+    position: relative;
+}
+.device .right_list .right_list_txt{
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    color: #000;
+    font-size: 1.3rem;
+    font-weight: 700;
+    z-index: 99;
+}
+.device .right_list ul li .right_list_txt::after{
+    content: ">";
+    margin-left:10px;
+}
+.device .right_list ul li img{
+    transition-duration: 0.3s;
+    width: 100%;
+}
+.device .right_list ul li:hover img{
+    transform: scale(1.2);
+    position: relative; 
+}
+.bi{
+    font-size: 1rem;
+    line-height: 0.8em;
+}
+.tour{
+    /* height: 100vh; */
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.tour .inner{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.tour .inner .left_txt_tit{
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+.tour .inner .left_txt_cont{
+    font-size: 1.4rem;
+    font-weight: normal;
+    color: #8597d5;
+}
+.tour .left_txt{
+    width: 30%;
+}
+.tour .right_list{
+    width: 60%;
+}
+.tour .right_list ul{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+.tour .right_list ul li{
+    width: calc((100% - 50px)/3);
+    border-radius: 20px;
+    overflow: hidden;
+    position: relative;
+}
+.tour .right_list .right_list_txt{
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    color: #000;
+    font-size: 1.3rem;
+    font-weight: 700;
+    z-index: 99;
+}
+.tour .right_list ul li .right_list_txt::after{
+    content: ">";
+    margin-left:10px;
+}
+.tour .right_list ul li img{
+    transition-duration: 0.3s;
+    width: 100%;
+}
+.tour .right_list ul li:hover img{
+    transform: scale(1.2);
+    position: relative; 
+}
+
+
+
+.banner{
+    /* height: 100vh; */
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.banner .inner{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.banner .inner .left_txt_tit{
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+.banner .inner .left_txt_cont{
+    font-size: 1.4rem;
+    font-weight: normal;
+    color: yellow;
+}
+.banner .left_txt{
+    width: 30%;
+}
+.banner .right_list{
+    width: 60%;
+}
+.banner .right_list ul{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+.banner .right_list ul li{
+    width: calc((100% - 50px)/3);
+    border-radius: 20px;
+    overflow: hidden;
+    position: relative;
+}
+.banner .right_list .right_list_txt{
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    color: #000;
+    font-size: 1.3rem;
+    font-weight: 700;
+    z-index: 99;
+}
+.banner .right_list ul li .right_list_txt::after{
+    content: ">";
+    margin-left:10px;
+}
+.banner .right_list ul li img{
+    transition-duration: 0.3s;
+    width: 100%;
+}
+.banner .right_list ul li:hover img{
+    transform: scale(1.2);
+    position: relative; 
+}
+
+/*********************contact****************************/
+#cot{
+    height: 600px;
+}
+#cot .p_logo{
+        width: 30%;
+        margin-bottom: 30px;
+        margin-top: 150px;
+        animation: 3s move3 forwards infinite;
+}
+#cot .card img{
+    width: 60%;
+   
+}
+#cot .card{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content:center;
+    align-items: center;
+    margin-left: 150px;
+}
+
+/*********************thank****************************/
+#thank{
+    margin-top: 270px;
+    height: 400px;
+}
+#thank img{
+    width: 100%;
+    animation: 3s move3 forwards infinite;
+    transition:t
+}
+
+@keyframes move3{
+    0%{
+      opacity: 0;  
+    }
+    100%{
+      opacity: 1;  
+    }
+}
